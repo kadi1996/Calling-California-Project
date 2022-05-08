@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 2rem;
+}
+
+span {
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 8rem;
+  font-family: "LarishNeue";
+  line-height: 0.75;
+}
+
+h2 {
+  font-size: 11rem;
+  font-family: "LarishNeue";
+}
+
+@font-face {
+  font-family: "LarishNeue";
+  src: url(../fonts/Larish\ Neue\ Semibold.woff2);
+  src: url(../fonts/LarishNeueSemibold.woff);
+}
+header {
+  background-color: #000;
+  color: #fff;
+}
+header article {
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+}
+header article div {
+  width: 50%;
+  height: 20vh;
+}
+header article div:nth-of-type(1) {
+  border-right: 1px solid #fff;
+}
+header .elephantPresents {
+  text-align: center;
+  padding-top: 20vh;
+}
+header .elephantPresents h1 + h1 {
+  color: #000;
+  -webkit-text-stroke: 1px white;
+}
+header .elephantPresents p {
+  padding: 3vh 0;
+}
+header .elephantPresents .linie {
+  border-right: 1px #fff;
+}
+header .logo {
+  display: flex;
+  justify-content: space-between;
+  padding: 15vh 10% 20vh 10%;
+}
+header .logo .atag {
+  text-decoration: none;
+  color: #fff;
+  font-size: 3rem;
+  border: 1px solid #fff;
+  padding: 15px;
+}
+header .logo .atag:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.8);
+}
+header .bearLogo {
+  width: 10%;
+}
+
+main .sectionOne {
+  padding: 10vh 0 0 10%;
+  color: #fff;
+  background-color: #000;
+}
+main .sectionOne article {
+  background: url(../img/map.svg) right top/40% auto no-repeat;
+  padding: 10vh 0;
+}
+main .sectionOne article div p {
+  padding: 3vh 0 0 0%;
+}
+main .sectionTwo {
+  position: relative;
+}
+main .sectionTwo article:nth-of-type(1) {
+  width: 55%;
+  margin: 0 auto;
+  padding-bottom: 110vh;
+  padding-left: 12%;
+}
+main .sectionTwo article:nth-of-type(1) h2 {
+  padding: 60vh 0 2vh 0;
+}
+main .sectionTwo article:nth-of-type(2) {
+  width: 55%;
+  margin: 0 auto;
+  padding: 0 0 40vh 12%;
+}
+main .sectionTwo img {
+  position: absolute;
+}
+main .sectionTwo .action1 {
+  width: 28%;
+  top: -9vh;
+  left: 60%;
+}
+main .sectionTwo .action2 {
+  width: 17%;
+  top: 50vh;
+  right: 80%;
+  left: 5%;
+}
+main .sectionTwo .action3 {
+  width: 15%;
+  right: 0%;
+  top: 95vh;
+}
+main .sectionTwo .action4 {
+  width: 23%;
+  top: 140vh;
+  left: 20%;
+}
+main .sectionTwo .action5 {
+  width: 23%;
+  top: 170vh;
+  right: 10%;
+}
+main .sectionTwo .action6 {
+  width: 17%;
+  top: 215vh;
+  left: 0%;
+}
+main .sectionTwo .action7 {
+  top: 255vh;
+  left: 50%;
+  width: 30%;
+  z-index: 1;
+}
+main .sectionThree {
+  background-color: #000;
+  color: #fff;
+  padding-bottom: 80vh;
+  position: relative;
+}
+main .sectionThree .bearText {
+  display: flex;
+  justify-content: space-between;
+  padding: 30vh 0 20vh 0;
+}
+main .sectionThree .bearText div:nth-of-type(1) {
+  padding: 0 20% 0 10%;
+}
+main .sectionThree .bearText div:nth-of-type(2) p:nth-of-type(1) {
+  padding-bottom: 2.5vh;
+  padding-right: 5%;
+  font-size: 3rem;
+  font-weight: 600;
+}
+main .sectionThree img {
+  position: absolute;
+}
+main .sectionThree img:nth-of-type(1) {
+  width: 45%;
+  left: 20%;
+  top: 120vh;
+}
+main .sectionThree img:nth-of-type(2) {
+  width: 25%;
+  left: 60%;
+  top: 133vh;
+}
+main .sectionFour {
+  position: relative;
+  overflow: hidden;
+}
+main .sectionFour .animationCircle img {
+  position: absolute;
+  z-index: 2;
+  width: 20%;
+  top: -5vh;
+  left: 86%;
+  animation-name: circle;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+main .sectionFour .bearText {
+  display: flex;
+  justify-content: space-between;
+  padding: 45vh 0 120vh 0;
+}
+main .sectionFour .bearText #divbox {
+  padding: 0 10% 0 10%;
+}
+main .sectionFour .bearText div:nth-of-type(3) p:nth-of-type(1) {
+  padding-bottom: 2.5vh;
+  padding-right: 5%;
+  font-size: 3rem;
+  font-weight: 600;
+}
+main .sectionFour img {
+  padding-top: 20vh;
+  position: absolute;
+  z-index: 1;
+}
+main .sectionFour #rosebear {
+  width: 45%;
+  top: 100vh;
+  left: 43%;
+}
+main .sectionFour img:nth-of-type(2) {
+  width: 30%;
+  top: 107vh;
+  left: 20%;
+}
+
+footer .sectionFive {
+  position: relative;
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+}
+footer .sectionFive .joinUs {
+  padding: 10vh 60% 0 10%;
+}
+footer .sectionFive .joinUs p {
+  padding: 5vh 0;
+  font-size: 3rem;
+  font-weight: 600;
+}
+footer .sectionFive .joinUs .atag {
+  text-decoration: none;
+  color: #fff;
+  font-size: 3rem;
+  border: 1px solid #fff;
+  padding: 15px;
+}
+footer .sectionFive .joinUs .atag:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.8);
+}
+footer .sectionFive .contact {
+  display: flex;
+  justify-content: space-between;
+  padding: 10vh;
+}
+footer .sectionFive .contact div:nth-of-type(1) {
+  padding-left: 5%;
+}
+footer .sectionFive .contact div:nth-of-type(1) img {
+  width: 40px;
+  padding: 10px 5px;
+}
+footer .sectionFive .contact div:nth-of-type(2) {
+  padding-right: 10%;
+}
+footer .sectionFive .contact div:nth-of-type(2) img {
+  width: 110px;
+  padding: 0 10px;
+}
+footer .sectionFive .animationText {
+  position: relative;
+  transform: rotate(45deg);
+  color: #fff;
+  -webkit-text-stroke: 1px #000;
+}
+footer .sectionFive .animationText h1 {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  animation-name: banner;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  top: -90vh;
+  padding: 10px;
+}
+footer .sectionFive .animationText h1 span {
+  font-size: 8rem;
+  color: #000;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes banner {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,363 @@
+@import "_variables.scss";
+@import "_mixin.scss";
+@import "_generals.scss";
+
+// Befehl zum starten von SCSS
+// Eingabe: sass --watch (pfad zur main.scss) (pfad zur style.css)
+//
+// sass --watch assets/scss/main.scss assets/css/style.css
+
+
+// fertig 
+header {
+    background-color: #000;
+    color: #fff;
+
+    article {
+        padding: 2px;
+        display: flex;
+        justify-content: center;
+
+        div {
+            width: 50%;
+            height: 20vh;
+        }
+
+        div:nth-of-type(1) {
+            border-right: 1px solid #fff;
+        }
+    }
+
+    .elephantPresents {
+        text-align: center;
+        padding-top: 20vh;
+
+        h1+h1 {
+            color: #000;
+            -webkit-text-stroke: 1px white;
+        }
+
+        p {
+            padding: 3vh 0;
+        }
+
+        .linie {
+            border-right: 1px #fff;
+        }
+    }
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        padding: 15vh 10% 20vh 10%;
+
+        .atag {
+            text-decoration: none;
+            color: #fff;
+            font-size: 3rem;
+            border: 1px solid #fff;
+            padding: 15px;
+        }
+
+        .atag:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: rgba(0, 0, 0, 0.8);
+        }
+    }
+
+    .bearLogo {
+        width: 10%;
+    }
+}
+
+main {
+    .sectionOne {
+        padding: 10vh 0 0 10%;
+        color: #fff;
+        background-color: #000;
+
+        article {
+            background: url(../img/map.svg) right top/ 40% auto no-repeat;
+            padding: 10vh 0;
+
+            div {
+                p {
+                    padding: 3vh 0 0 0%;
+                }
+            }
+        }
+    }
+
+
+    .sectionTwo {
+        position: relative;
+
+        article:nth-of-type(1) {
+            width: 55%;
+            margin: 0 auto;
+            padding-bottom: 110vh;
+            padding-left: 12%;
+
+            h2 {
+                padding: 60vh 0 2vh 0;
+            }
+        }
+
+        article:nth-of-type(2) {
+            width: 55%;
+            margin: 0 auto;
+            padding: 0 0 40vh 12%;
+
+        }
+
+        img {
+            position: absolute;
+        }
+
+        .action1 {
+            width: 28%;
+            top: -9vh;
+            left: 60%
+        }
+
+        .action2 {
+            width: 17%;
+            top: 50vh;
+            right: 80%;
+            left: 5%
+        }
+
+        .action3 {
+            width: 15%;
+            right: 0%;
+            top: 95vh;
+        }
+
+        .action4 {
+            width: 23%;
+            top: 140vh;
+            left: 20%;
+        }
+
+        .action5 {
+            width: 23%;
+            top: 170vh;
+            right: 10%;
+        }
+
+        .action6 {
+            width: 17%;
+            top: 215vh;
+            left: 0%;
+        }
+
+        .action7 {
+            top: 255vh;
+            left: 50%;
+            width: 30%;
+            z-index: 1;
+        }
+    }
+
+    .sectionThree {
+        background-color: #000;
+        color: #fff;
+        padding-bottom: 80vh;
+        position: relative;
+
+        .bearText {
+            display: flex;
+            justify-content: space-between;
+            padding: 30vh 0 20vh 0;
+
+            div:nth-of-type(1) {
+                padding: 0 20% 0 10%;
+            }
+
+            div:nth-of-type(2) {
+                p:nth-of-type(1) {
+                    padding-bottom: 2.5vh;
+                    padding-right: 5%;
+                    font-size: 3rem;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        img {
+            position: absolute;
+        }
+
+        img:nth-of-type(1) {
+            width: 45%;
+            left: 20%;
+            top: 120vh
+        }
+
+        img:nth-of-type(2) {
+            width: 25%;
+            left: 60%;
+            top: 133vh;
+        }
+    }
+
+    .sectionFour {
+        position: relative;
+        overflow: hidden;
+
+        .animationCircle {
+
+            img {
+                position: absolute;
+                z-index: 2;
+                width: 20%;
+                top: -5vh;
+                left: 86%;
+                animation-name: circle;
+                animation-duration: 15s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+        }
+
+        .bearText {
+            display: flex;
+            justify-content: space-between;
+            padding: 45vh 0 120vh 0;
+
+            #divbox {
+                padding: 0 10% 0 10%;
+            }
+
+            div:nth-of-type(3) {
+                p:nth-of-type(1) {
+                    padding-bottom: 2.5vh;
+                    padding-right: 5%;
+                    font-size: 3rem;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        img {
+            padding-top: 20vh;
+            position: absolute;
+            z-index: 1;
+        }
+
+        #rosebear {
+            width: 45%;
+            top: 100vh;
+            left: 43%;
+        }
+
+        img:nth-of-type(2) {
+            width: 30%;
+            top: 107vh;
+            left: 20%;
+        }
+    }
+}
+
+footer {
+    .sectionFive {
+        position: relative;
+        background-color: #000;
+        color: #fff;
+        overflow: hidden;
+
+        .joinUs {
+            padding: 10vh 60% 0 10%;
+
+            p {
+                padding: 5vh 0;
+                font-size: 3rem;
+                font-weight: 600;
+            }
+
+            .atag {
+                text-decoration: none;
+                color: #fff;
+                font-size: 3rem;
+                border: 1px solid #fff;
+                padding: 15px;
+            }
+
+            .atag:hover {
+                background-color: rgba(255, 255, 255, 0.8);
+                color: rgba(0, 0, 0, 0.8);
+            }
+        }
+
+        .contact {
+            display: flex;
+            justify-content: space-between;
+            padding: 10vh;
+
+            div:nth-of-type(1) {
+                padding-left: 5%;
+            }
+
+            div:nth-of-type(1) img {
+                width: 40px;
+                padding: 10px 5px;
+            }
+
+            div:nth-of-type(2) {
+                padding-right: 10%;
+            }
+
+            div:nth-of-type(2) img {
+                width: 110px;
+                padding: 0 10px;
+            }
+        }
+
+        .animationText {
+            position: relative;
+            transform: rotate(45deg);
+            color: #fff;
+            -webkit-text-stroke: 1px #000;
+
+            h1 {
+                position: absolute;
+                background-color: rgba(255, 255, 255, 0.8);
+                animation-name: banner;
+                animation-duration: 15s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                top: -90vh;
+                padding: 10px;
+
+                span {
+                    font-size: 8rem;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes banner {
+    0% {
+        transform: translateX(0%);
+    }
+
+    50% {
+        transform: translateX(50%)
+    }
+
+    100% {
+        transform: translateX(0%)
+    }
+}
